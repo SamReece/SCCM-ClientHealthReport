@@ -7,11 +7,11 @@ Function Get-PendingClients {
     This function has been designed to collate all clients without a client and export them into a report.
 
 .EXAMPLE
-    Get-PendingClients -SiteCode WM1 -ProviderMachineName "VM533008" -Collection "All WM1 Systems" -Export "C:\system center" 
+    Get-PendingClients -SiteCode AB1 -ProviderMachineName "SCCMServer" -Collection "Example Collection" -Export "C:\system center" 
 
 .EXAMPLE
   
-   Get-PendingClients -SiteCode WM1 -ProviderMachineName "VM533008" -Collection "All Swedish Workstations", "All Swedish Servers" -Export "C:\ExportPath"
+   Get-PendingClients -SiteCode AB1 -ProviderMachineName "SCCMServer" -Collection "Example Collection 1", "Example Collection 2" -Export "C:\ExportPath"
     
 .NOTES
     File Name : Get-PendingClients.ps1
