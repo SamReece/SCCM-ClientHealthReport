@@ -1,6 +1,6 @@
 # Get-PendingClients Workflow
 
-<p> generates a report for all devices in a collection that do not have a client installed. </p>
+<p>Generates a report for all devices within a collection that do not have the Configuration Manager installed.</p>
 
 
 
