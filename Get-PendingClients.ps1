@@ -17,6 +17,7 @@ Function Get-PendingClients {
     File Name : Get-PendingClients.ps1
     Author    : Sam Reece
     Requires  : System Center Configuration Manager
+    Version   : 1.0.1
 #>
 
   param
@@ -258,7 +259,6 @@ color: inherit;
     Write-host "$Export path does not exist" -ForegroundColor Red  
     break
   }
-
   # Connectivty and query code
   $initParams = @{}
   if((Get-Module ConfigurationManager) -eq $null) {
