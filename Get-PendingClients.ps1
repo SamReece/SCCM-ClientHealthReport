@@ -18,6 +18,7 @@ Function Get-PendingClients {
     Author    : Sam Reece
     Requires  : System Center Configuration Manager
     Version   : 1.0.1
+    GitHub    : https://github.com/SamReece/System-Centre
 #>
 
   param
@@ -61,7 +62,7 @@ width: 100%;
 }
 
 .summary {
-    padding-top: 30px;
+    padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -69,6 +70,7 @@ width: 100%;
     width: 900px;
     position: relative;
     border-style:solid;
+    border-radius: 12px;
     border-color:lightgray;
     border-width: 1px;
     font-size: 14px;
@@ -310,8 +312,8 @@ color: inherit;
           $Report += "&nbsp"  
           $Report += "<h2> Report Summary:</h2>"
           $Report += '<p class="summary">' +"There are $($Output.Computer.Count) computers and servers in $Collection that do not have the System Center client installed on the host.`n<br>
-                                             Of the $($Output.Computer.Count) devices in $Collection, $($ICMPCount.count) are unreachable by ping.`n<br>
-                                             $($WMICount.Count) devices are unavailable by WMI (Remote Procedure Call) Turn off the firewall or redploy the group GPO</p>"}
+                                         <br>$($Output.Computer.Count) devices in $Collection, $($ICMPCount.count) are unreachable by ping.`n<br>
+                                         <br>$($WMICount.Count) devices are unavailable by WMI (Remote Procedure Call) Turn off the firewall or redploy the group GPO</p>"}
   }
   $Report += @"
 <footer class="footer-basic-centered">
