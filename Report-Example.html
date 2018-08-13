@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<head>
+<title>Example</title>
+<style>
+  body {
+background-color: #ffffff;
+font-family: "Roboto", helvetica, arial, sans-serif;
+font-size: 10px;
+font-weight: 400;
+text-rendering: optimizeLegibility;
+}
+
+div.table-title {
+ display: block;
+margin: auto;
+max-width: 600px;
+padding:5px;
+width: 100%;
+}
+
+.header {
+    background-color: #292c2f;
+    padding: 20px;
+    text-align: center;
+    color:  #8d9093;
+    font-size: 16px;
+    margin: 0;
+}
+
+.summary {
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    height: 100px;
+    width: 900px;
+    position: relative;
+    border-style:solid;
+    border-color:lightgray;
+    border-width: 1px;
+    font-size: 14px;
+    font-family: 'Open sans', sans-serif;
+    color: #777777;
+}
+
+.table-title h3 {
+ color: #fafafa;
+ font-size: 20px;
+ font-weight: 200;
+ font-style:normal;
+ font-family: "Roboto", helvetica, arial, sans-serif;
+ text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+ text-transform:uppercase;
+}
+
+/*** Table Styles **/
+
+.table-fill {
+background: white;
+border-radius:3px;
+border-collapse: collapse;
+height: 320px;
+margin: auto;
+max-width: 600px;
+padding:5px;
+width: 100%;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+animation: float 5s infinite;
+}
+
+th {
+color:#D5DDE5;;
+background:#1b1e24;
+border-bottom:4px solid #9ea7af;
+border-right: 1px solid #343a45;
+font-size:1810:52 26/07/2018px;
+font-weight: 100;
+padding:10px;
+text-align:left;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+vertical-align:middle;
+}
+
+th:first-child {
+border-top-left-radius:3px;
+}
+
+th:last-child {
+border-top-right-radius:3px;
+border-right:none;
+}
+
+tr {
+border-top: 1px solid #C1C3D1;
+border-bottom-: 1px solid #C1C3D1;
+color:#666B85;
+font-size:12px;
+font-weight:normal;
+text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+tr:hover td {
+background:#4E5066;
+color:#FFFFFF;
+border-top: 1px solid #22262e;
+border-bottom: 1px solid #22262e;
+}
+
+tr:first-child {
+border-top:none;
+}
+
+tr:last-child {
+border-bottom:none;
+}
+
+tr:nth-child(odd) td {
+background:#EBEBEB;
+}
+
+tr:nth-child(odd):hover td {
+background:#4E5066;
+}
+
+tr:last-child td:first-child {
+border-bottom-left-radius:3px;
+}
+
+tr:last-child td:last-child {
+border-bottom-right-radius:3px;
+}
+
+td {
+background:#FFFFFF;
+padding:20px;
+text-align:left;
+vertical-align:middle;
+font-weight:300;
+font-size:12px;
+text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+border-right: 0px;
+}
+
+th.text-left {
+text-align: left;
+}
+
+th.text-center {
+text-align: center;
+}
+
+th.text-right {
+text-align: right;
+}
+
+td.text-left {
+text-align: left;
+}
+
+td.text-center {
+text-align: center;
+}
+
+td.text-right {
+text-align: right;
+}
+
+/*** Footer styles ***/
+
+.footer-basic-centered{
+background-color: #292c2f;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: center;
+font: normal 18px sans-serif;
+
+padding: 45px;
+margin-top: 80px;
+}
+
+.footer-basic-centered .footer-Department{
+color:  #8d9093;
+font-size: 24px;
+margin: 0;
+}
+
+.footer-basic-centered .footer-Generated{
+color:  #8f9296;
+font-size: 14px;
+margin: 0;
+}
+
+.footer-basic-centered .footer-links{
+list-style: none;
+font-weight: bold;
+color:  #ffffff;
+padding: 35px 0 23px;
+margin: 0;
+}
+
+.footer-basic-centered .footer-links a{
+display:inline-block;
+text-decoration: none;
+color: inherit;
+}
+
+</style>
+</head><body>
+
+
+  </style>
+  <div class="header">
+  <H1>Example Report</H1>
+  </div>
+  &nbsp;
+  &nbsp;
+  <H2>Report type: Pending Clients</H2><H3>Example - All devices in example collection</H3>&nbsp<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>HTML TABLE</title> </head><body> <table> <colgroup><col/><col/><col/><col/></colgroup> <tr><th>Computer</th><th>Client</th><th>ICMP</th><th>WMI Enabled</th></tr> <tr><td>WS10UPS</td><td>No</td><td>True</td><td>False</td></tr> <tr><td>WS10V30</td><td>No</td><td>True</td><td>True</td></tr> <tr><td>WS7PV20</td><td>No</td><td>True</td><td>True</td></tr> <tr><td>WS8PVWN</td><td>No</td><td>False</td><td>False</td></tr> <tr><td>NB8PV44</td><td>No</td><td>True</td><td>True</td></tr> <tr><td>WS7PV39</td><td>No</td><td>True</td><td>False</td></tr> <tr><td>WS10V17</td><td>No</td><td>False</td><td>False</td></tr> <tr><td>NB10VNS</td><td>No</td><td>False</td><td>False</td></tr> <tr><td>WS10V39</td><td>No</td><td>True</td><td>False</td></tr> <tr><td>WS10VQM</td><td>No</td><td>False</td><td>False</td></tr> </table> </body></html>&nbsp&nbsp<h2> Report Summary:</h2><p class="summary">There are 10 computers and servers in Example - All devices in example collection that do not have the System Center client installed on the host.
+<br>
+                                             <br>10 devices in Example - All devices in example collection, 4 are unreachable by ping.
+<br>
+                                             <br>7 devices are unavailable by WMI (Remote Procedure Call) Turn off the firewall or redploy the group GPO</p><footer class="footer-basic-centered">
+<p class="footer-Department">Example IT Department</p>
+<p class="footer-links">
+  <a href="mailto:example@business.com">Contact</a>
+</p>
+<p class="footer-Generated">Generated on: 08:15 03-08-18 </p>
+</footer>
+<table>
+</table>
+</body></html>
