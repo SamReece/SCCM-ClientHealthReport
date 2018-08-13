@@ -34,7 +34,7 @@ Function Get-PendingClients {
   $header = @"
 
 <head>
-<title>Watson Marlow Fluid Technology Group</title>
+<title>IT Department</title>
 <style>
  body {
 background-color: #ffffff;
@@ -317,7 +317,7 @@ color: inherit;
   }
   $Report += @"
 <footer class="footer-basic-centered">
-<p class="footer-Department">Watson Marlow Fluid Technology Group IT</p>
+<p class="footer-Department">Group IT department</p>
 <p class="footer-links">
   <a href="mailto:sam.reece@wmftg.com">Contact</a>
 </p>
