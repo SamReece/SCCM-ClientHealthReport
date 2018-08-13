@@ -17,7 +17,7 @@ Function Get-PendingClients {
     File Name : Get-PendingClients.ps1
     Author    : Sam Reece
     Requires  : System Center Configuration Manager
-    Version   : 1.0.1
+    Version   : 1.0.2
     GitHub    : https://github.com/SamReece/System-Centre
 #>
 
@@ -300,11 +300,11 @@ color: inherit;
       if ($null -eq $Conversion) {
         $Report += '<b Style="font-size: 14px; color: green;">No data</b>'
         $Report += "&nbsp"
-        $Report += "<h2> Report Summary for $Collection</h2>"
+        $Report += "<h2> Report Summary for $DeviceCollection</h2>"
         $Report += "&nbsp"
-        $Report += '<b Style="font-size: 14px; color: green;">All client machines in' + " $Collection have been installed </b>"
+        $Report += '<b Style="font-size: 14px; color: green;">All client machines in' + " $DeviceCollection have been installed </b>"
       }
-      else {
+      else{
           $ICMPCount = $Output."ICMP" | where {$_ -eq "False"}
           $WMICount  = $Output."WMI Enabled" | where {$_ -eq $False}
           $Report += $Conversion
