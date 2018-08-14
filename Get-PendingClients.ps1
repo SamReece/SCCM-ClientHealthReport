@@ -17,7 +17,7 @@ Function Get-PendingClients {
     File Name : Get-PendingClients.ps1
     Author    : Sam Reece
     Requires  : System Center Configuration Manager
-    Version   : 1.0.2
+    Version   : 1.0.3
     GitHub    : https://github.com/SamReece/System-Centre
 #>
 
@@ -26,9 +26,9 @@ Function Get-PendingClients {
       [Parameter(Mandatory=$true)][String]$SiteCode,
       [Parameter(Mandatory=$true)][String]$ProviderMachineName,
       [Parameter(Mandatory=$true)][String[]]$Collection,
-      [Parameter(Mandatory=$true)][String[]]$Export
+      [Parameter(Mandatory=$true)][String[]]$Export,
+      [Parameter(Mandatory=$false)][String[]]$Title
   )
-  $Title = "Pending Clients"
   $Date = Get-Date -Format "dd-MM-yy "
   $Time = Get-Date -Format "HH:mm"
   $header = @"
@@ -247,14 +247,16 @@ color: inherit;
 </style>
 "@
   $Report = '
-
-  </style>
-  <div class="header">
-  <H1>Watson Marlow Fluid Technology Group</H1>
-  </div>
-  &nbsp;
-  &nbsp;
+    </style>
+    <div class="header">
+    <H1>Watson Marlow Fluid Technology Group</H1>
+    </div>
+    &nbsp;
+    &nbsp;
   '
+  if (-not $Title) {
+      $Title = "Pending Clients"
+  }
   $Report += "<H2>Report type: $Title</H2>"
   $Path    = (Test-Path -Path $Export)
   if (-Not $Export) {
