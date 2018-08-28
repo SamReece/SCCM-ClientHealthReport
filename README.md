@@ -24,3 +24,4 @@ Get-PendingClients -SiteCode AB1 -ProviderMachineName "SCCMServer" -Collection "
 
 ## Output result
 ![Alt text](Example-result.PNG?raw=true "HTML Report")
+![Alt text](Example-Result2.PNG?raw=true "HTML Report")
