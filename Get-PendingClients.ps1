@@ -315,7 +315,7 @@ color: inherit;
           $Report += "<h2> Report Summary:</h2>"
           $Report += '<p class="summary">' +"There are $($Output.Computer.Count) computers and servers in $Collection that do not have the System Center client installed on the host.`n<br>
                                          <br>$($Output.Computer.Count) devices in $Collection, $($ICMPCount.count) are unreachable by ping.`n<br>
-                                         <br>$($WMICount.Count) devices are unavailable by WMI (Remote Procedure Call) Turn off the firewall or redploy the group GPO</p>"}
+                                         <br>$($WMICount.Count) devices are unavailable by WMI (Remote Procedure Call) Turn off the firewall or redeploy the group GPO</p>"}
   }
   $Report += @"
 <footer class="footer-basic-centered">
