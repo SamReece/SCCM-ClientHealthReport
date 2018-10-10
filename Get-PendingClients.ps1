@@ -249,7 +249,7 @@ color: inherit;
   $Report = '
     </style>
     <div class="header">
-    <H1>Watson Marlow Fluid Technology Group</H1>
+    <H1>IT Department</H1>
     </div>
     &nbsp;
     &nbsp;
@@ -317,13 +317,15 @@ color: inherit;
                                          <br>$($Output.Computer.Count) devices in $Collection, $($ICMPCount.count) are unreachable by ping.`n<br>
                                          <br>$($WMICount.Count) devices are unavailable by WMI (Remote Procedure Call) Turn off the firewall or redeploy the group GPO</p>"}
   }
+  $Stopwatch.Stop()
   $Report += @"
 <footer class="footer-basic-centered">
 <p class="footer-Department">Group IT department</p>
 <p class="footer-links">
-  <a href="mailto:sam.reece@wmftg.com">Contact</a>
+  <a href="mailto:samreece@protonmail.com">Contact</a>
 </p>
 <p class="footer-Generated">Generated on: $Time $Date</p>
+<p class="footer-Generated"> Script duration: $($Stopwatch.Elapsed.seconds) seconds</p>
 </footer>
 "@
 ConvertTo-Html -head $header -Body $Report | Out-File "$Export\$Collection - $Title.html"
