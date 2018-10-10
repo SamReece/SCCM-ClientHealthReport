@@ -29,6 +29,7 @@ Function Get-PendingClients {
       [Parameter(Mandatory=$true)][String[]]$Export,
       [Parameter(Mandatory=$false)][String[]]$Title
   )
+  $Stopwatch = [System.Diagnostics.Stopwatch]::StartNew()
   $Date = Get-Date -Format "dd-MM-yy "
   $Time = Get-Date -Format "HH:mm"
   $header = @"
