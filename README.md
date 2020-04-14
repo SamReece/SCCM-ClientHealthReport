@@ -6,13 +6,14 @@
 
 ![Alt text](Get-PendingClients.PNG?raw=true "Get-PendingClients Workflow")
 
-# Examples
-
-### Import a script into your PowerShell session
+# Installation
 ```
 cd <Path to file>
 .\Get-PendingClients.ps1
 ```
+
+# Examples
+
 ### Run a query on a single device collection
 ```
 Get-PendingClients -SiteCode AB1 -ProviderMachineName "SCCMServer" -Collection "All AB1 Systems" -Export "C:\system center"
