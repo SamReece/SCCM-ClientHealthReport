@@ -2,17 +2,17 @@
 
 <p>Generates a report for all devices within a collection that do not have the Configuration Manager client installed.</p>
 
-# Workflow
+## Workflow
 
 ![Alt text](Get-PendingClients.PNG?raw=true "Get-PendingClients Workflow")
 
-# Installation
+## Installation
 ```
 cd <Path to file>
 .\Get-PendingClients.ps1
 ```
 
-# Examples
+## Examples
 
 ### Run a query on a single device collection
 ```
