@@ -23,8 +23,8 @@ Get-PendingClients -SiteCode AB1 -ProviderMachineName "SCCMServer" -Collection "
 Get-PendingClients -SiteCode AB1 -ProviderMachineName "SCCMServer" -Collection "Example collection 1", "Example collection 2" -Export "C:\system center"
 ```
 
-## Output result
+### Output result
 ![Alt text](Example-result.PNG?raw=true "HTML Report")
 
-## Output result when a collection does not have missing clients
+### Output result when a collection does not have missing clients
 ![Alt text](Example-Result2.PNG?raw=true "HTML Report")
