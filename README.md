@@ -17,11 +17,11 @@ cd <Path to file>
 
 ## Examples
 
-### Run a query on a single device collection
+### Execute a query against a single device collection
 ```
 Get-PendingClients -SiteCode AB1 -ProviderMachineName "SCCMServer" -Collection "All AB1 Systems" -Export "C:\system center"
 ```
-### Run a query on multiple device collections
+### Execute a query against multiple device collections
 ```
 Get-PendingClients -SiteCode AB1 -ProviderMachineName "SCCMServer" -Collection "Example collection 1", "Example collection 2" -Export "C:\system center"
 ```
