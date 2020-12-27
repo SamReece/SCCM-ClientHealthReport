@@ -3,7 +3,7 @@
 <p>
   This report has been built with PowerShell, HTML and CSS
   
-  It's function is to generate a report for all devices within a collection that do not have the Configuration Manager client installed.</p>
+This program has been built to helo you find out why devices within your SCCM collections do not have a Configuration Manager client installed.</p>
 
 ## Workflow
 
