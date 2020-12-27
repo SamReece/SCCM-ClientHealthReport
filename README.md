@@ -3,7 +3,7 @@
 <p>
   This report has been built with PowerShell, HTML and CSS
   
-This application has been built to helo you find out why devices within your SCCM collections do not have a Configuration Manager client installed.</p>
+This application has been built to help you understand why devices within your SCCM collections do not have a Configuration Manager client installed.</p>
 
 ## Workflow
 
